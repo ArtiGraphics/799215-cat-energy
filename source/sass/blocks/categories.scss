@@ -63,10 +63,7 @@
 }
 
 .categories__description {
-  font-family: "Arial";
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
+  @include description;
   padding-bottom: 22px;
 
   border-bottom: 1px solid $separator;
