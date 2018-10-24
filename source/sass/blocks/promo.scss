@@ -1,7 +1,52 @@
 .promo {
-  display: flex;
-  background-repeat: no-repeat;
-  background-color: lightgreen;
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
 
+.promo__header {
+  display: flex;
+  flex-direction: column;
+
+  background-repeat: no-repeat;
+  background-color: rgba(101, 169, 60, 1);
   background-image: url("../../img/index-background-mobile@1x.jpg");
+}
+
+.promo__title,
+.promo__slogan,
+.promo__button {
+  font-weight: 400;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 27px;
+  margin-bottom: 26px;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 166px;
+}
+
+.promo__button {
+  margin-left: 20px;
+  padding-left: 73px;
+  padding-right: 74px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  text-transform: uppercase;
+  background-color: $green;
+}
+
+.promo__image {
+  margin-left: 20px;
+  margin-top: -139px;
+  margin-bottom: 9px;
 }
