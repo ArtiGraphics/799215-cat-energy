@@ -1,0 +1,79 @@
+.toggle {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.toggle__image {
+  margin-bottom: 28px;
+}
+
+.toggle__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  border: none;
+  background: transparent;
+  margin-bottom: 34px;
+}
+
+.toggle__button--before {
+  margin-left: 58px;
+}
+
+.toggle__button--after {
+  margin-right: 52px;
+}
+
+.toggle__scale {
+  position: relative;
+  left: -13%;
+
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 3px;
+
+    width: 82px;
+    height: 12px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  &--before::before {
+    content: "";
+
+    position: absolute;
+    z-index: 1;
+    top: 7px;
+    left: 6px;
+
+    width: 35px;
+    height: 6px;
+    background-color: $green;
+    border-radius: 6px;
+  }
+
+  &--after::before {
+    content: "";
+
+    position: absolute;
+    z-index: 1;
+    top: 7px;
+    left: 41px;
+
+    width: 35px;
+    height: 6px;
+    background-color: $green;
+    border-radius: 6px;
+  }
+}
