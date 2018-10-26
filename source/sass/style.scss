@@ -8,7 +8,11 @@
 @import "standard/mixins.scss";
 
 /* Blocks */
+
+/* Header */
 @import "blocks/page-header";
+
+/* index.html */
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 @import "blocks/promo.scss";
@@ -16,3 +20,8 @@
 @import "blocks/advantages.scss";
 @import "blocks/living-example.scss";
 @import "blocks/toggle.scss";
+
+/* Footer */
+@import "blocks/page-footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";

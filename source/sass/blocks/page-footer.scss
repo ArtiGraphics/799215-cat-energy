@@ -1,0 +1,18 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  margin: 0 auto;
+  background-color: rgb(242, 242, 242);
+}
+
+.page-footer__map {
+  margin-top: -38px;
+  margin-bottom: 39px;
+}
+
+.page-footer__logo {
+  align-self: center;
+  margin-bottom: 31px;
+}
