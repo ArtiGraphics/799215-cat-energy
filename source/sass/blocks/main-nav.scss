@@ -1,29 +1,22 @@
 .main-nav {
   position: relative;
-
   margin: 0 auto;
-
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: -42px;
-  right: 23px;
-  width: 18px;
-  height: 18px;
-  background-image: url("../../img/icon-close.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
-}
-
-/*.main-nav__wrapper {
-  display: flex;
-  justify-content: space-between;
-
-}*/
-
-.main-nav__list {
-  @include clear-list;
+  &--open {
+    top: -42px;
+    right: 23px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../../img/icon-close.svg");
+  }
+  &--close {
+    /* Стили для гамбургера */
+  }
 }

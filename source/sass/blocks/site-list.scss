@@ -1,3 +1,7 @@
+.site-list {
+  @include clear-list;
+}
+
 .site-list__item {
   padding-top: 23px;
   padding-bottom: 19px;
@@ -11,8 +15,16 @@
 
   font-size: 20px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 
-  color: rgba(17, 17, 17, 1);
+  color: rgb(17, 17, 17);
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
