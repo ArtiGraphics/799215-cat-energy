@@ -1,16 +1,15 @@
 .promo {
   width: 320px;
   margin: 0 auto;
-  background-color: #ffffff;
-  margin-bottom: 31px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 30px;
 }
 
 .promo__header {
   display: flex;
   flex-direction: column;
-
   background-repeat: no-repeat;
-  background-color: rgba(101, 169, 60, 1);
+  background-color: rgb(101, 169, 60);
   background-image: url("../../img/index-background-mobile@1x.jpg");
 }
 
@@ -19,7 +18,7 @@
 .promo__button {
   font-weight: 400;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
 }
 
 .promo__title {
@@ -37,8 +36,9 @@
 }
 
 .promo__button {
-  margin-left: 20px;
-  padding-left: 73px;
+  font-size: 14px;
+  margin-left: 18px;
+  padding-left: 74px;
   padding-right: 74px;
   padding-top: 10px;
   padding-bottom: 9px;
@@ -49,5 +49,5 @@
 .promo__image {
   margin-left: 20px;
   margin-top: -139px;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }

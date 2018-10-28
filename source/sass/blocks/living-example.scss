@@ -14,12 +14,16 @@
 .living-example__title {
   @include tittle-h2;
   padding-top: 17px;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .living-example__history {
   @include description;
   margin-bottom: 23px;
+}
+
+.living-example__stats-list {
+  margin-bottom: 1px;
 }
 
 .living-example__stats-list tbody {

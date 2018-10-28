@@ -1,0 +1,26 @@
+.copyright__html-academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__html-academy-title {
+  font-family: "Arial";
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+}
+
+.copyright__html-academy-logo {
+  width: 41px;
+  height: 41px;
+  fill: rgb(102, 102, 102);
+  &:hover,
+  &:focus {
+    fill: $green;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}

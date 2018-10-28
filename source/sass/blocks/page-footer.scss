@@ -1,7 +1,6 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-
   width: 320px;
   margin: 0 auto;
   background-color: rgb(242, 242, 242);
@@ -15,4 +14,15 @@
 .page-footer__logo {
   align-self: center;
   margin-bottom: 31px;
+}
+
+.page-footer__social {
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+
+.page-footer__copyright {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 22px;
 }

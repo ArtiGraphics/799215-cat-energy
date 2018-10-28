@@ -1,10 +1,12 @@
 .toggle {
+  display: flex;
+  flex-direction: column;
   width: 320px;
   margin: 0 auto;
 }
 
 .toggle__image {
-  margin-bottom: 28px;
+  margin-bottom: 31px;
 }
 
 .toggle__buttons {
@@ -20,7 +22,7 @@
 
   border: none;
   background: transparent;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 }
 
 .toggle__button--before {
@@ -40,7 +42,7 @@
     content: "";
 
     position: absolute;
-    top: 3px;
+    top: 4px;
 
     width: 82px;
     height: 12px;
@@ -54,7 +56,7 @@
 
     position: absolute;
     z-index: 1;
-    top: 7px;
+    top: 8px;
     left: 6px;
 
     width: 35px;
