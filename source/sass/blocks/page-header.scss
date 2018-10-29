@@ -1,13 +1,13 @@
 .page-header {
   width: 320px;
   margin: 0 auto;
+  padding-top: 12px;
   border-bottom: 1px solid $separator;
 }
 
 .page-header__logo {
   display: block;
   padding-left: 20px;
-  padding-top: 12px;
   padding-bottom: 10px;
   &:hover,
   &:focus {
@@ -23,19 +23,29 @@
   height: 38px;
 }
 
-/*@media (min-width: $medium-width) {
+@media (min-width: $medium-width) {
+  .page-header {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    width: 708px;
+    margin-bottom: 5px;
+    padding-top: 24px;
+    border: none;
+  }
+
   .page-header__logo {
-    height: 58px;
+    padding: 0;
+    margin: 0;
+    margin-right: 95px;
   }
 
   .page-header__logo-image {
-    display: block;
-    margin: 0 auto;
     width: 173px;
     height: 58px;
   }
 }
-
+/*
 @media (min-width: $large-width) {
   .page-footer__logo {
     height: 59px;

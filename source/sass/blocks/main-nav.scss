@@ -9,14 +9,25 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
-  &--open {
-    top: -42px;
-    right: 23px;
-    width: 18px;
-    height: 18px;
-    background-image: url("../../img/icon-close.svg");
+}
+
+@media (max-width: $small-with-only) {
+  .main-nav__toggle {
+    &--open {
+      top: -42px;
+      right: 23px;
+      width: 18px;
+      height: 18px;
+      background-image: url("../../img/icon-close.svg");
+    }
+    &--close {
+      /* Стили для гамбургера */
+    }
   }
-  &--close {
-    /* Стили для гамбургера */
+}
+
+@media (min-width: $medium-width) {
+  .main-nav {
+    padding-top: 18px;
   }
 }
