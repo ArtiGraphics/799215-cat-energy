@@ -6,7 +6,11 @@
 }
 
 .toggle__image {
-  margin-bottom: 31px;
+  margin-bottom: 26px;
+}
+
+.toggle__image--after {
+  display: none;
 }
 
 .toggle__buttons {
@@ -77,5 +81,41 @@
     height: 6px;
     background-color: $green;
     border-radius: 6px;
+  }
+}
+
+@media (min-width: $medium-width) {
+  .toggle {
+    width: 708px;
+  }
+
+  .toggle__images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .toggle__image--before,
+  .toggle__image--after {
+    display: block;
+  }
+
+  .toggle__image--before {
+    position: absolute;
+    left: 21px;
+    width: 667px;
+    height: 499px;
+  }
+
+  .toggle__image--after {
+    position: absolute;
+    right: 75px;
+    width: 545px;
+    height: 517px;
+  }
+
+  .toggle__buttons {
+    margin-top: 600px;
   }
 }
