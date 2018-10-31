@@ -102,3 +102,45 @@
     padding-bottom: 16px;
   }
 }
+
+@media (min-width: $large-width) {
+  .promo {
+    position: relative;
+    justify-content: flex-start;
+    width: 1200px;
+    margin-bottom: 50px;
+    background-color: transparent;
+  }
+
+  .promo__header {
+    margin-left: 70px;
+  }
+
+  .promo__title {
+    width: 488px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 68px;
+  }
+
+  .promo__image {
+    position: absolute;
+    top: 86px;
+    left: 420px;
+    width: 552px;
+    height: 499px;
+  }
+
+  .promo__button {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 26px;
+    padding-right: 29px;
+    margin-left: 70px;
+  }
+}

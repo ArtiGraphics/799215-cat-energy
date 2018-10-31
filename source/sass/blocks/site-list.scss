@@ -61,3 +61,25 @@
     }
   }
 }
+
+@media (min-width: $large-width) {
+  .site-list {
+    position: relative;
+    z-index: 1;
+    top: 1px;
+  }
+
+  .site-list__item:not(:nth-child(3n)) {
+    margin-right: 34px;
+  }
+
+  .site-list__item a {
+    font-size: 20px;
+    line-height: 24.86px;
+    color: rgb(255, 255, 255);
+  }
+
+  .site-list__item--active::after {
+    background-color: rgb(255, 255, 255);
+  }
+}

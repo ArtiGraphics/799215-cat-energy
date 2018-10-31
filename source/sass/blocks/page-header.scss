@@ -45,16 +45,31 @@
     height: 58px;
   }
 }
-/*
+
 @media (min-width: $large-width) {
-  .page-footer__logo {
-    height: 59px;
+  .page-header {
+    width: 1300px;
+    padding-top: 54px;
+    margin-bottom: 82px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -8px;
+
+      width: 50vw;
+      height: 696px;
+      background-repeat: no-repeat;
+      background-color: rgb(100, 168, 59);
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+    }
   }
 
   .page-header__logo-image {
     display: block;
-    margin: 0 auto;
+    margin-left: 40px;
     width: 202px;
     height: 59px;
+    margin-right: 405px;
   }
-}*/
+}
