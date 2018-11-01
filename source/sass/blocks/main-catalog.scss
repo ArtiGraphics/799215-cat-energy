@@ -2,9 +2,10 @@
   width: 320px;
   margin: 0 auto;
   margin-top: 15px;
+  margin-bottom: 28px;
 }
 
-.page-main__tittle {
+.main-catalog__tittle {
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -113,4 +114,19 @@
 .main-catalog__button--more {
   color: rgb(68, 68, 68);
   background-color: rgb(242, 242, 242);
+}
+
+@media (min-width: $medium-width) {
+  .main-catalog {
+    display: flex;
+    flex-direction: column;
+    width: 708px;
+    margin-top: 53px;
+  }
+
+  .main-catalog__tittle {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 0;
+  }
 }
