@@ -134,3 +134,21 @@
     }
   }
 }
+
+@media (min-width: $large-width) {
+  .advantages {
+    border: none;
+  }
+
+  .advantages__wrapper {
+    width: 1220px;
+  }
+
+  .advantages__item {
+    width: 245px;
+
+    &:nth-child(1)::after {
+      left: 118px;
+    }
+  }
+}
