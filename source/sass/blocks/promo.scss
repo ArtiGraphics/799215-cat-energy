@@ -108,7 +108,7 @@
     position: relative;
     justify-content: flex-start;
     width: 1200px;
-    margin-bottom: 50px;
+    margin-bottom: 280px;
     background-color: transparent;
   }
 
@@ -142,5 +142,6 @@
     padding-left: 26px;
     padding-right: 29px;
     margin-left: 70px;
+    box-sizing: border-box;
   }
 }
