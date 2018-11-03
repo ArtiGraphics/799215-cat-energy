@@ -3,10 +3,6 @@
   margin: 0 auto;
 }
 
-/*.additional-catalog__wrapper {
-  margin-left: 20px;
-}*/
-
 .additional-catalog__title {
   font-size: 24px;
   line-height: 24px;
@@ -61,8 +57,7 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  padding-left: 110px;
-  padding-right: 110px;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 17px;
@@ -90,10 +85,110 @@
 }
 
 .additional-catalog__condition {
-  font-family: Arial;
+  font-family: "Arial";
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   width: 170px;
   color: rgb(255, 255, 255);
+}
+
+@media (min-width: $medium-width) {
+  .additional-catalog {
+    width: 768px;
+    margin-top: -75px;
+  }
+
+  .additional-catalog__title {
+    position: relative;
+    width: 340px;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 38px;
+    padding-right: 34px;
+    margin-left: 30px;
+    margin-bottom: 46px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 22px;
+      left: -30px;
+
+      width: 768px;
+      height: 3px;
+      background-color: $green;
+    }
+  }
+
+  .additional-catalog__list {
+    margin-bottom: 69px;
+  }
+
+  .additional-catalog__item-title {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .additional-catalog__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 633px;
+    padding-top: 26px;
+    padding-left: 36px;
+    padding-right: 37px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    margin: 0 auto;
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  .additional-catalog__amount,
+  .additional-catalog__price {
+    font-size: 16px;
+    line-height: 20px;
+    width: 93px;
+    text-align: right;
+  }
+
+  .additional-catalog__amount {
+    width: 192px;
+  }
+
+  .additional-catalog__button {
+    margin-bottom: 27px;
+  }
+
+  .additional-catalog__gift {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 708px;
+    height: 200px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .additional-catalog__gift-image {
+    margin: 0;
+    margin-top: -10px;
+    margin-left: 91px;
+  }
+
+  .additional-catalog__condition {
+    text-align: left;
+    margin: 0;
+    margin-top: 4px;
+    margin-left: 278px;
+  }
 }
