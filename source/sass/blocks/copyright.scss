@@ -24,3 +24,10 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $medium-width) {
+  .copyright__html-academy-logo {
+    margin-left: 15px;
+    margin-right: -7px;
+  }
+}
