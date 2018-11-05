@@ -51,7 +51,7 @@
   }
 
   .contacts__address {
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-top: 36px;
     margin-bottom: 32px;
     margin-right: 71px;
@@ -70,10 +70,28 @@
   .contacts__location {
     margin-bottom: 20px;
   }
+}
 
-  .page-footer__map {
-    width: 767px;
-    height: 400px;
-    margin-top: -4px;
+@media (min-width: $large-width) {
+  .contacts {
+    position: absolute;
+    width: 570px;
+    top: 95px;
+    left: 110px;
+  }
+
+  .contacts__location,
+  .contacts__city {
+    text-align: left;
+  }
+
+  .contacts__address {
+    margin-right: 89px;
+    margin-bottom: 31px;
+  }
+
+  .contacts__invite {
+    margin-left: 76px;
+    margin-right: 0;
   }
 }
