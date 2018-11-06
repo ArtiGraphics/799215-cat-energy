@@ -117,7 +117,7 @@
 }
 
 .form__label sup,
-.form__required-fields sup{
+.form__required-fields sup {
   font-size: 100%;
   top: 0;
   left: -1px;
@@ -322,7 +322,7 @@
   }
 }
 
-.form__content--more {
+.form__content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -361,4 +361,77 @@
   line-height: 16px;
   margin-top: 26px;
   margin-left: 42px;
+}
+
+@media (min-width: $large-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1220px;
+  }
+
+  .form__main-title {
+    margin-top: -8px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .form__description {
+    margin-left: 0;
+  }
+
+  .form__item {
+    margin: 0;
+
+    &--cat-info {
+      margin-right: 80px;
+    }
+
+    &--cat-need {
+      box-sizing: border-box;
+      margin-bottom: 69px;
+    }
+
+    &--cat-info,
+    &--cat-need {
+      width: 570px;
+    }
+  }
+
+  .form__title {
+    &::after {
+      top: 22px;
+      left: -70px;
+      width: 1440px;
+    }
+  }
+
+  .form__label {
+    &--man {
+      width: 570px;
+      margin-bottom: 68px;
+    }
+
+    &--more {
+      width: 245px;
+    }
+  }
+
+  .form__comment {
+    width: 100%;
+    margin-top: -1px;
+    margin-bottom: 68px;
+  }
+
+  .form__button {
+    width: 568px;
+    margin-top: 19px;
+    margin-bottom: 82px;
+    margin-left: 1px;
+  }
+
+  .form__required-fields {
+    margin-top: 35px;
+    margin-left: 62px;
+  }
 }
