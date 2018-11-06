@@ -228,3 +228,33 @@
     margin-bottom: 83px;
   }
 }
+
+@media (min-width: $large-width) {
+  .main-catalog {
+    width: 1220px;
+  }
+
+  .main-catalog__tittle {
+    margin-top: -8px;
+  }
+
+  .main-catalog__item {
+    width: 245px;
+  }
+
+  .main-catalog__table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-catalog__item--more {
+    box-sizing: border-box;
+    margin-left: 0;
+  }
+
+  .main-catalog__table,
+  .main-catalog__button,
+  .main-catalog__button--more {
+    width: 169px;
+  }
+}
