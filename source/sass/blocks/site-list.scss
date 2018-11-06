@@ -76,10 +76,16 @@
   .site-list__item a {
     font-size: 20px;
     line-height: 24.86px;
+  }
+
+  .site-list__item--index a {
     color: rgb(255, 255, 255);
   }
 
   .site-list__item--active::after {
+    background-color: $green;
+
+  }.site-list__item--index.site-list__item--active::after {
     background-color: rgb(255, 255, 255);
   }
 }
