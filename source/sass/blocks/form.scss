@@ -270,8 +270,19 @@
     }
 
     &--more {
+      position: relative;
       box-sizing: border-box;
       width: 285px;
+      padding-left: 56px;
+      margin-bottom: 52px;
+      color: rgb(17, 17, 17);
+
+      &::before {
+        top: -9px;
+        left: -2px;
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 
@@ -319,20 +330,6 @@
     padding-top: 10px;
     padding-left: 18px;
     margin-bottom: 13px;
-  }
-
-  .form__label--more {
-    position: relative;
-    padding-left: 56px;
-    margin-bottom: 52px;
-    color: rgb(17, 17, 17);
-
-    &::before {
-      top: -9px;
-      left: -2px;
-      width: 40px;
-      height: 40px;
-    }
   }
 
   .form__input--more:checked + label::after {
