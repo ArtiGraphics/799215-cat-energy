@@ -1,0 +1,121 @@
+.toggle {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.toggle__image {
+  margin-bottom: 26px;
+}
+
+.toggle__image--after {
+  display: none;
+}
+
+.toggle__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  border: none;
+  background: transparent;
+  margin-bottom: 35px;
+}
+
+.toggle__button--before {
+  margin-left: 58px;
+}
+
+.toggle__button--after {
+  margin-right: 52px;
+}
+
+.toggle__scale {
+  position: relative;
+  left: -13%;
+
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+
+    width: 82px;
+    height: 12px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  &--before::before {
+    content: "";
+
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: 6px;
+
+    width: 35px;
+    height: 6px;
+    background-color: $green;
+    border-radius: 6px;
+  }
+
+  &--after::before {
+    content: "";
+
+    position: absolute;
+    z-index: 1;
+    top: 7px;
+    left: 41px;
+
+    width: 35px;
+    height: 6px;
+    background-color: $green;
+    border-radius: 6px;
+  }
+}
+
+@media (min-width: $medium-width) {
+  .toggle {
+    width: 708px;
+  }
+
+  .toggle__images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .toggle__image--before,
+  .toggle__image--after {
+    display: block;
+  }
+
+  .toggle__image--before {
+    position: absolute;
+    left: 21px;
+    width: 667px;
+    height: 499px;
+  }
+
+  .toggle__image--after {
+    position: absolute;
+    right: 75px;
+    width: 545px;
+    height: 517px;
+  }
+
+  .toggle__buttons {
+    margin-top: 600px;
+  }
+}

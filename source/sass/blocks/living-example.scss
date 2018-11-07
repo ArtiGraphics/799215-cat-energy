@@ -1,0 +1,141 @@
+.living-example {
+  background-color: rgb(242, 242, 242);
+}
+
+.living-example__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+}
+
+.living-example__title {
+  @include tittle-h2;
+  padding-top: 17px;
+  margin-bottom: 9px;
+}
+
+.living-example__history {
+  @include description;
+  margin-bottom: 23px;
+}
+
+.living-example__statistic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.living-example__stats-list {
+  margin-bottom: 1px;
+}
+
+.living-example__stats-list tbody {
+  display: flex;
+  flex-wrap: wrap;
+  width: 276px;
+  justify-content: space-between;
+}
+
+.living-example__stats-list tr {
+  display: flex;
+  flex-direction: column;
+  width: 122px;
+}
+
+.living-example__value {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 3px;
+}
+
+.living-example__field {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  text-align: center;
+
+  position: relative;
+  top: -9px;
+  width: 65px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 0 10px;
+
+  color: rgb(68, 68, 68);
+  background-color: rgb(242, 242, 242);
+}
+
+.living-example__expenses {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (min-width: $medium-width) {
+  .living-example {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .living-example__wrapper {
+    width: 708px;
+  }
+
+  .living-example__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 0;
+    margin-bottom: 48px;
+  }
+
+  .living-example__history {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+
+  .living-example__statistic {
+    justify-content: space-between;
+  }
+
+  .living-example__stats-list tbody {
+    box-sizing: border-box;
+    margin-left: -2px;
+    width: 366px;
+  }
+
+  .living-example__stats-list tr {
+    width: 162px;
+  }
+
+  .living-example__value {
+    font-size: 30px;
+    line-height: 37.02px;
+    padding-top: 15px;
+    padding-bottom: 19px;
+  }
+
+  .living-example__field {
+    font-size: 14px;
+    line-height: 14px;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .living-example__expenses {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    width: 192px;
+    padding-top: 9px;
+  }
+}
