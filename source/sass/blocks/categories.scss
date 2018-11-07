@@ -51,7 +51,7 @@
     top: 22px;
     left: 10px;
     background-repeat: no-repeat;
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
   }
 
   &--pro::before {
@@ -60,7 +60,7 @@
     top: 35px;
     left: -7px;
     background-repeat: no-repeat;
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
   }
 
   &::after {
@@ -109,7 +109,7 @@
     width: 24px;
     height: 11px;
 
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
   }
 }
 
