@@ -33,6 +33,7 @@
     height: 60px;
     background-color: $green;
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -43,15 +44,19 @@
     width: 50px;
     height: 50px;
   }
+
   &--healthy-diet::before {
     background-image: url("../../img/advantage-leaf@1x.png");
   }
+
   &--cook-quickly::before {
     background-image: url("../../img/advantage-powder@1x.png");
   }
+
   &--saves-food::before {
     background-image: url("../../img/advantage-dining@1x.png");
   }
+
   &--quick-result::before {
     background-image: url("../../img/advantage-clock@1x.png");
   }
@@ -84,6 +89,7 @@
     width: 324px;
     margin-top: 138px;
     margin-bottom: 65px;
+
     &::after {
       content: "1";
       font-size: 281.07px;
@@ -96,14 +102,17 @@
       top: -135px;
       left: 133px;
     }
+
     &:nth-child(2)::after {
       content: "2";
       left: 112px;
     }
+
     &:nth-child(3)::after {
       content: "3";
       left: 114px;
     }
+
     &:nth-child(4)::after {
       content: "4";
       left: 114px;
