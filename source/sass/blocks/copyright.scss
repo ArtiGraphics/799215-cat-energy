@@ -5,7 +5,7 @@
 }
 
 .copyright__html-academy-title {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -16,10 +16,12 @@
   width: 41px;
   height: 41px;
   fill: rgb(102, 102, 102);
+
   &:hover,
   &:focus {
     fill: $green;
   }
+
   &:active {
     opacity: 0.3;
   }
