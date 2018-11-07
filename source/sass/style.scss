@@ -1,13 +1,13 @@
-/* Libraries */
-@import "libraries/fonts.scss";
+/* ------ Libraries ------ */
 @import "libraries/normalize.scss";
+@import "libraries/fonts.scss";
 
-/* Standard */
+/* ------ Standard ------ */
 @import "standard/scaffolding.scss";
 @import "standard/variables.scss";
 @import "standard/mixins.scss";
 
-/* Blocks */
+/* ------ Blocks ------ */
 
 /* Header */
 @import "blocks/page-header";
