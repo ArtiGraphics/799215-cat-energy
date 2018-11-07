@@ -9,10 +9,12 @@
   display: block;
   padding-left: 20px;
   padding-bottom: 10px;
+
   &:hover,
   &:focus {
     opacity: 0.8;
   }
+
   &:active {
     opacity: 0.6;
   }

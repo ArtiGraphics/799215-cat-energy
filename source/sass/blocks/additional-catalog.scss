@@ -38,7 +38,7 @@
 
 .additional-catalog__amount,
 .additional-catalog__price {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   width: 140px;
@@ -85,7 +85,7 @@
 }
 
 .additional-catalog__condition {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -148,6 +148,7 @@
     padding-right: 37px;
     border: 1px solid rgba(205, 205, 205, 0.5);
     margin: 0 auto;
+
     &:not(:last-child) {
       border-bottom: none;
     }

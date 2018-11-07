@@ -34,6 +34,7 @@
 .social__link {
   display: flex;
   align-content: center;
+
   &:not(:nth-child(3n)) {
     margin-right: 38px;
   }
@@ -41,10 +42,12 @@
 
 .social__icon {
   fill: rgb(102, 102, 102);
+
   &:hover,
   &:focus {
     fill: $green;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -58,6 +61,7 @@
   .social__link {
     display: flex;
     align-content: center;
+
     &:not(:nth-child(3n)) {
       margin-right: 28px;
     }
