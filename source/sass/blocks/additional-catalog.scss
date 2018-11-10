@@ -61,8 +61,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 17px;
-  color: rgb(255, 255, 255);
-  background-color: $green;
+
+  @include green-button;
 }
 
 .additional-catalog__gift {

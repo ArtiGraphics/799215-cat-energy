@@ -103,9 +103,23 @@
       border-radius: 50%;
     }
   }
+
+  &--man {
+    position: relative;
+  }
 }
 
-.form__item--cat-need-input:checked + label::after {
+.form__item--cat-need-input:hover + .form__label--cat-need::before,
+.form__input--more:hover + .form__label--more::before {
+  border-color: rgb(166, 166, 166);
+}
+
+.form__item--cat-need-input:active + .form__label--cat-need::before,
+.form__input--more:active + .form__label--more::before {
+  border-color: rgba(168, 168, 168, 0.3);
+}
+
+.form__item--cat-need-input:checked + .form__label--cat-need::after {
   content: "";
   position: absolute;
   width: 12px;
@@ -114,6 +128,15 @@
   left: -37px;
   border-radius: 50%;
   background-color: rgb(104, 183, 56);
+}
+
+.form__label--cat-need:active,
+.form__label--more:active {
+  color: rgba(34, 34, 34, 0.3);
+
+  &::after {
+    opacity: 0.3;
+  }
 }
 
 .form__label sup,
@@ -131,7 +154,41 @@
   padding-left: 15px;
   border: 1px solid rgb(230, 230, 230);
   margin-left: 15px;
+  outline: none;
   /*color: rgb(68, 68, 68);*/
+}
+
+.form__icon {
+  position: absolute;
+  fill: rgb(34, 34, 34);
+
+  &--mail {
+    right: 16px;
+    width: 17px;
+    height: 13px;
+  }
+
+  &--phone {
+    right: 13px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+.form__input:hover {
+  border-color: rgb(205, 205, 205);
+}
+
+.form__input--man:active + .form__icon,
+.form__input--man:focus + .form__icon {
+  fill: $green;
+}
+
+.form__input:active,
+.form__input:focus {
+  border: 1px solid rgb(68, 68, 68);
+  box-shadow: 0 0 0 1px rgb(68, 68, 68);
 }
 
 .form__comment {
@@ -168,7 +225,7 @@
   }
 }
 
-.form__input--more:checked + label::after {
+.form__input--more:checked + .form__label--more::after {
   content: "";
   position: absolute;
   box-sizing: border-box;
@@ -196,8 +253,8 @@
   border: none;
   margin: 9px 20px;
   margin-bottom: 21px;
-  color: rgb(255, 255, 255);
-  background-color: $green;
+
+  @include green-button;
 }
 
 .form__required-fields {
@@ -293,13 +350,24 @@
     margin-left: 18px;
   }
 
-  .form__item--cat-need-input:checked + label::after {
+  .form__item--cat-need-input:checked + .form__label--cat-need::after {
     width: 18px;
     height: 18px;
     top: 1px;
     left: -28px;
     border-radius: 50%;
     background-color: rgb(104, 183, 56);
+  }
+
+  .form__icon {
+    &--mail {
+      right: 19px;
+    }
+
+    &--phone {
+      top: 17px;
+      right: 16px;
+    }
   }
 
   .form__title {
@@ -332,7 +400,7 @@
     margin-bottom: 13px;
   }
 
-  .form__input--more:checked + label::after {
+  .form__input--more:checked + .form__label--more::after {
     top: 1px;
     left: 8px;
   }
@@ -411,6 +479,17 @@
 
     &--more {
       width: 245px;
+    }
+  }
+
+  .form__icon {
+    &--mail {
+      right: 22px;
+    }
+
+    &--phone {
+      top: 17px;
+      right: 19px;
     }
   }
 

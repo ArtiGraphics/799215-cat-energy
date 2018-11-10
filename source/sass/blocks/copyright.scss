@@ -25,6 +25,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (max-width: $small-with-only) {
+    margin-right: -7px;
+  }
 }
 
 @media (min-width: $medium-width) {
