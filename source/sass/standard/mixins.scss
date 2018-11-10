@@ -21,6 +21,7 @@
 @mixin green-button {
   color: rgb(255, 255, 255);
   background-color: $green;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -35,6 +36,7 @@
 @mixin grey-button {
   color: rgb(68, 68, 68);
   background-color: rgb(242, 242, 242);
+  cursor: pointer;
 
   &:hover,
   &:focus {
