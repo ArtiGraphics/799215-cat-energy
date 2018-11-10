@@ -26,10 +26,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
-  @media (max-width: $small-with-only) {
-    margin-bottom: 34px;
-  }
+  margin-bottom: 34px;
 }
 
 .living-example__stats-list {
@@ -111,6 +108,7 @@
 
   .living-example__statistic {
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   .living-example__stats-list tbody {
