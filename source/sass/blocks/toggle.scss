@@ -3,6 +3,10 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
+
+  @media (max-width: $small-with-only) {
+    margin-left: -20px;
+  }
 }
 
 .toggle__image {
