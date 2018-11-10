@@ -253,8 +253,8 @@
   border: none;
   margin: 9px 20px;
   margin-bottom: 21px;
-  color: rgb(255, 255, 255);
-  background-color: $green;
+
+  @include green-button;
 }
 
 .form__required-fields {

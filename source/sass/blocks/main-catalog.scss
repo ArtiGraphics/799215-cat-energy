@@ -70,7 +70,8 @@
   margin-top: -5px;
   margin-bottom: 24px;
   color: rgb(255, 255, 255);
-  background-color: $green;
+
+  @include green-button;
 }
 
 .main-catalog__item--more {
@@ -113,8 +114,7 @@
 }
 
 .main-catalog__button--more {
-  color: rgb(68, 68, 68);
-  background-color: rgb(242, 242, 242);
+  @include grey-button;
 }
 
 @media (min-width: $medium-width) {
