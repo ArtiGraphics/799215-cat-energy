@@ -89,13 +89,14 @@
 
   .living-example__wrapper {
     width: 708px;
+    margin-bottom: 0;
   }
 
   .living-example__title {
     font-size: 60px;
     line-height: 60px;
     padding-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 64px;
   }
 
   .living-example__history {
@@ -112,6 +113,7 @@
     box-sizing: border-box;
     margin-left: -2px;
     width: 366px;
+    margin-bottom: 34px;
   }
 
   .living-example__stats-list tr {
