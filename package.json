@@ -20,7 +20,8 @@
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.6.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "svgxuse": "^1.2.6"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
