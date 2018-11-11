@@ -1,0 +1,18 @@
+@media (min-width: $large-width) {
+  .body-index::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 696px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: rgb(100, 168, 59);
+    background-image: url("../img/index-background-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    background-image: url("../index-background-desktop@2x.jpg");
+  }
+}

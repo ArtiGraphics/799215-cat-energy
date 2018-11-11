@@ -10,13 +10,15 @@
 /* ------ Blocks ------ */
 
 /* Header */
-@import "blocks/page-header";
+@import "blocks/body-index.scss";
+@import "blocks/page-header.scss";
 
 /* index.html */
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 @import "blocks/promo.scss";
 @import "blocks/categories.scss";
+@import "blocks/tablet-br.scss";
 @import "blocks/advantages.scss";
 @import "blocks/living-example.scss";
 @import "blocks/toggle.scss";
