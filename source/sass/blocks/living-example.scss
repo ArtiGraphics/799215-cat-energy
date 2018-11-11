@@ -144,7 +144,7 @@
 
 @media (min-width: $large-width) {
   .living-example {
-    width: 1440px;
+    width: auto;
     margin: 0 auto;
     padding-bottom: 39px;
     background-image: linear-gradient(rgb(255, 255, 255) 135px, rgb(242, 242, 242) 135px);
@@ -154,9 +154,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: auto;
-    padding-left: 110px;
-    margin: 0;
+    width: 1220px;
+    margin: 0 auto;
     margin-bottom: 0;
   }
 

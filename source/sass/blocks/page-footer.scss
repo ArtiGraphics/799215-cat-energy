@@ -84,19 +84,26 @@
 @media (min-width: $large-width) {
   .page-footer {
     position: relative;
-    width: 1440px;
+    width: auto;
+    margin: 0 auto;
+    margin-top: -6px;
+    background-color: rgb(242, 242, 242);
+  }
+
+  .page-footer__wrapper {
+    width: 1300px;
+    margin: 0 auto;
   }
 
   .page-footer__map {
     width: 1440px;
     height: 400px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .page-footer__links-list {
     width: 1220px;
-    padding-left: 110px;
-    padding-right: 110px;
+    margin: 0 auto;
   }
 
   .page-footer__logo {
