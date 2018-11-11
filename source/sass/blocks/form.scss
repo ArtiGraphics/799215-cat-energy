@@ -447,6 +447,7 @@
 @media (min-width: $large-width) {
   .form {
     width: 1440px;
+    margin-bottom: 0;
   }
 
   .form__list {
@@ -462,7 +463,7 @@
 
   .form__description {
     margin-left: 110px;
-    margin-bottom: 56px;
+    margin-bottom: 66px;
   }
 
   .form__item {
@@ -474,8 +475,8 @@
 
     &--cat-need {
       box-sizing: border-box;
-      margin-bottom: 69px;
-      margin-top: 10px;
+      margin-bottom: 20px;
+      margin-top: 0;
     }
 
     &--cat-info,
@@ -485,6 +486,10 @@
   }
 
   .form__title {
+    &--man {
+      margin-top: 49px;
+    }
+
     &::after {
       top: 22px;
       left: -70px;
@@ -499,7 +504,12 @@
     }
 
     &--more {
-      width: 245px;
+      margin-right: 38px;
+    }
+
+    &--more-last {
+      width: 200px;
+      margin-right: 0;
     }
   }
 
