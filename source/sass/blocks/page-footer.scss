@@ -93,9 +93,11 @@
   .page-footer__wrapper {
     width: 1300px;
     margin: 0 auto;
+    position: relative;
   }
 
   .page-footer__map {
+    position: absolute;
     width: 1440px;
     height: 400px;
     margin: 0 auto;
@@ -104,6 +106,8 @@
   .page-footer__links-list {
     width: 1220px;
     margin: 0 auto;
+    margin-top: 400px;
+    margin-bottom: 40px;
   }
 
   .page-footer__logo {

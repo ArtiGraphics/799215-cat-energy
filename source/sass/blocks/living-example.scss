@@ -18,7 +18,7 @@
 
 .living-example__history {
   @include description;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   color: rgb(17, 17, 17);
 }
 
@@ -34,7 +34,7 @@
   flex-wrap: wrap;
   width: 276px;
   justify-content: space-between;
-  margin-bottom: 1px;
+  margin-bottom: 3px;
 }
 
 .living-example__stats-item {
@@ -117,6 +117,7 @@
 
   .living-example__stats-item {
     width: 162px;
+    margin-bottom: 4px;
   }
 
   .living-example__value {
@@ -146,7 +147,7 @@
   .living-example {
     width: auto;
     margin: 0 auto;
-    padding-bottom: 39px;
+    padding-bottom: 45px;
     background-image: linear-gradient(rgb(255, 255, 255) 135px, rgb(242, 242, 242) 135px);
   }
 
