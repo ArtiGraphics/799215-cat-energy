@@ -44,13 +44,13 @@
       <form class="form__list" method="get" action="https://echo.htmlacademy.ru">
         <div class="form__item form__item--cat-info">
           <h2 class="visually-hidden">Информация о коте</h2>
-          <label class="form__label" for="cat-name">Имя:<sup>*</sup>
+          <label class="form__label form__label--cat-info" for="cat-name">Имя:<sup>*</sup>
             <input class="form__input" type="text" name="cat-name" id="cat-name" value="" placeholder="Барсик">
           </label>
-          <label class="form__label" for="cat-weight">Вес (кг):<sup>*</sup>
+          <label class="form__label form__label--cat-info" for="cat-weight">Вес (кг):<sup>*</sup>
             <input class="form__input" type="text" name="cat-weight" id="cat-weight" value="" placeholder="7">
           </label>
-          <label class="form__label" for="cat-age">Возраст (лет):
+          <label class="form__label form__label--cat-info" for="cat-age">Возраст (лет):
             <input class="form__input" type="text" name="cat-age" id="cat-age" value="" placeholder="7">
           </label>
         </div>
@@ -89,13 +89,13 @@
           <h2 class="form__title form__title--more">Дополнительно</h2>
           <div class="form__content form__content--more">
             <input class="visually-hidden form__input--more" type="checkbox" name="sweetener" id="sweetener" checked>
-            <label class="form__label form__label--more" for="sweetener">Сахарозаменитель</label>
+            <label class="form__label form__label--more form__label--more-first" for="sweetener">Сахарозаменитель</label>
             <input class="visually-hidden form__input--more" type="checkbox" name="drinking-water" id="drinking-water">
             <label class="form__label form__label--more" for="drinking-water">Питьевая вода</label>
             <input class="visually-hidden form__input--more" type="checkbox" name="milk" id="milk">
-            <label class="form__label form__label--more" for="milk">Молоко</label>
+            <label class="form__label form__label--more form__label--more-first" for="milk">Молоко</label>
             <input class="visually-hidden form__input--more" type="checkbox" name="vitamins" id="vitamins">
-            <label class="form__label form__label--more" for="vitamins">Витамины</label>
+            <label class="form__label form__label--more form__label--more-last" for="vitamins">Витамины</label>
           </div>
         </div>
         <input class="form__button" type="submit" name="submit_application" value="Отправить заявку">
