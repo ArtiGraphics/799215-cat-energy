@@ -30,10 +30,18 @@
     display: flex;
     flex-shrink: 0;
     justify-content: space-between;
-    width: 708px;
+    width: 768px;
     margin-bottom: 26px;
     padding-top: 24px;
     border: none;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    width: 708px;
+    margin: 0 auto;
   }
 
   .page-header__logo {
@@ -63,9 +71,17 @@
   }
 
   .page-header {
-    width: 1300px;
+    width: auto;
     padding-top: 54px;
     margin-bottom: 82px;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 0 auto;
   }
 
   .page-header__logo-image {
