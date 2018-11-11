@@ -43,7 +43,8 @@
   padding-top: 10px;
   padding-bottom: 9px;
   text-transform: uppercase;
-  background-color: $green;
+
+  @include green-button;
 }
 
 .promo__image {

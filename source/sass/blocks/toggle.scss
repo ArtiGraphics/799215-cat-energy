@@ -3,6 +3,10 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
+
+  @media (max-width: $small-with-only) {
+    margin-left: -20px;
+  }
 }
 
 .toggle__image {
@@ -37,63 +41,67 @@
   margin-right: 52px;
 }
 
-.toggle__scale {
-  position: relative;
-  left: -13%;
+@media (max-width: $small-with-only) {
+  .toggle__scale {
+    position: relative;
+    left: -24px;
 
+    &::after {
+      content: "";
 
-  &::after {
-    content: "";
+      position: absolute;
+      top: 4px;
 
-    position: absolute;
-    top: 4px;
+      width: 82px;
+      height: 12px;
+      border: 1px solid rgb(205, 205, 205);
+      border-radius: 6px;
+      background-color: rgb(255, 255, 255);
+    }
 
-    width: 82px;
-    height: 12px;
-    border: 1px solid rgb(205, 205, 205);
-    border-radius: 6px;
-    background-color: rgb(255, 255, 255);
-  }
+    &--before::before {
+      content: "";
 
-  &--before::before {
-    content: "";
+      position: absolute;
+      z-index: 1;
+      top: 8px;
+      left: 6px;
 
-    position: absolute;
-    z-index: 1;
-    top: 8px;
-    left: 6px;
+      width: 35px;
+      height: 6px;
+      background-color: $green;
+      border-radius: 6px;
+    }
 
-    width: 35px;
-    height: 6px;
-    background-color: $green;
-    border-radius: 6px;
-  }
+    &--after::before {
+      content: "";
 
-  &--after::before {
-    content: "";
+      position: absolute;
+      z-index: 1;
+      top: 7px;
+      left: 41px;
 
-    position: absolute;
-    z-index: 1;
-    top: 7px;
-    left: 41px;
-
-    width: 35px;
-    height: 6px;
-    background-color: $green;
-    border-radius: 6px;
+      width: 35px;
+      height: 6px;
+      background-color: $green;
+      border-radius: 6px;
+    }
   }
 }
 
 @media (min-width: $medium-width) {
   .toggle {
     width: 708px;
+    margin-bottom: 38px;
   }
 
   .toggle__images {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    height: 462px;
+    margin-top: 197px;
+    background-image: linear-gradient(to right, rgb(242, 242, 242) 50%, rgb(234, 234, 234) 50%);
   }
 
   .toggle__image--before,
@@ -103,12 +111,14 @@
 
   .toggle__image--before {
     position: absolute;
-    left: 21px;
-    width: 667px;
-    height: 499px;
+    top: -169px;
+    left: 16px;
+    width: 690px;
+    height: 517px;
   }
 
   .toggle__image--after {
+    display: none;
     position: absolute;
     right: 75px;
     width: 545px;
@@ -116,6 +126,120 @@
   }
 
   .toggle__buttons {
-    margin-top: 600px;
+    margin-top: -96px;
+  }
+
+  .toggle__button {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 45px;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom: 1px dotted rgba(17, 17, 17, 0.23);
+    }
+  }
+
+  .toggle__button--before {
+    margin-left: 63px;
+  }
+
+  .toggle__button--after {
+    margin-right: 63px;
+  }
+
+  .toggle__scale {
+    position: relative;
+    width: 428px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: -48.5%;
+      width: 428px;
+      height: 6px;
+      border-radius: 2.5px;
+      transform: translateX(50%);
+      background-color: rgb(220, 220, 220);
+    }
+  }
+
+  .toggle__control {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -234px;
+      box-sizing: border-box;
+      width: 32px;
+      height: 32px;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid rgb(205, 205, 205);
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &:hover::before,
+    &:active::before {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active::before {
+      border: 2px solid $green;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -222px;
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (min-width: $large-width) {
+  .toggle {
+    margin: 0;
+    width: auto;
+  }
+
+  .toggle__images {
+    position: relative;
+    width: 690px;
+    height: 462px;
+    margin-top: 135px;
+    padding-right: 110px;
+    background-image: linear-gradient(to right, rgb(242, 242, 242) 50.5%, rgb(234, 234, 234) 50.5%);
+  }
+
+  .toggle__image--before {
+    position: absolute;
+    top: -190px;
+    left: 40px;
+  }
+
+  .toggle__buttons {
+    margin-top: -96px;
+    margin-bottom: 0;
+  }
+
+  .toggle__button--before {
+    margin-left: 114px;
+  }
+
+  .toggle__button--after {
+    margin-right: 104px;
   }
 }

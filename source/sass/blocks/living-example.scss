@@ -7,24 +7,26 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 34px;
 }
 
 .living-example__title {
   @include tittle-h2;
   padding-top: 17px;
-  margin-bottom: 9px;
+  margin-bottom: 23px;
+  color: rgb(17, 17, 17);
 }
 
 .living-example__history {
   @include description;
   margin-bottom: 23px;
+  color: rgb(17, 17, 17);
 }
 
 .living-example__statistic {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 34px;
 }
 
 .living-example__stats-list {
@@ -88,13 +90,14 @@
 
   .living-example__wrapper {
     width: 708px;
+    margin-bottom: 0;
   }
 
   .living-example__title {
     font-size: 60px;
     line-height: 60px;
     padding-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 64px;
   }
 
   .living-example__history {
@@ -105,12 +108,14 @@
 
   .living-example__statistic {
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   .living-example__stats-list tbody {
     box-sizing: border-box;
     margin-left: -2px;
     width: 366px;
+    margin-bottom: 34px;
   }
 
   .living-example__stats-list tr {
@@ -137,5 +142,58 @@
     text-align: right;
     width: 192px;
     padding-top: 9px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .living-example {
+    width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 39px;
+    background-image: linear-gradient(rgb(255, 255, 255) 135px, rgb(242, 242, 242) 135px);
+  }
+
+  .living-example__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    padding-left: 110px;
+    margin: 0;
+    margin-bottom: 0;
+  }
+
+  .living-example__all-info {
+    width: 570px;
+  }
+
+  .living-example__title {
+    margin-bottom: 147px;
+  }
+
+  .living-example__history {
+    width: 435px;
+    margin-bottom: 65px;
+  }
+
+  .living-example__stats-list tbody {
+    margin-bottom: 0;
+  }
+
+  .living-example__field {
+    background-color: rgb(242, 242, 242);
+  }
+
+  .living-example__expenses {
+    text-align: left;
+    width: auto;
+  }
+
+  .living-example__stats-list {
+    margin-bottom: 23px;
+  }
+
+  .living-example__price {
+    margin-left: 60px;
   }
 }
