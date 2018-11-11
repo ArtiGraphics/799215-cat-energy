@@ -74,6 +74,10 @@
   margin-bottom: 35px;
   background-color: $green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .additional-catalog__gift-image {
@@ -180,6 +184,10 @@
       margin: 0 auto;
       background-repeat: no-repeat;
       background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+      @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+        background-image: url("../img/gift-photo-tablet@2x.jpg");
+      }
     }
 
     .additional-catalog__gift-image {
@@ -199,10 +207,16 @@
 
 @media (min-width: $large-width) {
   .additional-catalog {
+    width: auto;
+    margin-bottom: 22px;
+  }
+
+  .additional-catalog__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 1220px;
-    margin-bottom: 17px;
+    margin: 0 auto;
   }
 
   .additional-catalog__title {
@@ -220,6 +234,7 @@
   }
 
   .additional-catalog__item {
+    justify-content: flex-start;
     align-items: center;
     width: 895px;
     padding-left: 0;
@@ -229,26 +244,26 @@
     border-left: none;
     border-right: none;
     margin: 0;
-    margin-right: 80px;
+    border-color: rgb(205, 205, 205);
   }
 
   .additional-catalog__item-title {
-    flex-grow: 1;
+    width: 245px;
+    margin-right: 78px;
     margin-bottom: 0;
   }
 
   .additional-catalog__table {
-    width: 285px;
+    width: 295px;
     margin-bottom: 0;
-    margin-right: 40px;
   }
 
   .additional-catalog__amount {
-    width: 240px;
+    width: 255px;
   }
 
   .additional-catalog__price {
-    width: 45px;
+    width: 48px;
   }
 
   .additional-catalog__amount,
@@ -257,15 +272,36 @@
   }
 
   .additional-catalog__button {
-    margin-left: 0;
+    margin-left: 31px;
     width: 245px;
     margin-bottom: 0;
   }
 
   .additional-catalog__gift {
+    position: relative;
     margin: 0;
     width: 245px;
     height: 289px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+
+  .additional-catalog__gift-image {
+    position: absolute;
+    left: 96px;
+    top: 65px;
+    margin: 0;
+  }
+
+  .additional-catalog__condition {
+    position: absolute;
+    left: 37px;
+    bottom: 42px;
+    margin: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
   }
 }

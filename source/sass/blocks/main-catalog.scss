@@ -232,7 +232,12 @@
 
 @media (min-width: $large-width) {
   .main-catalog {
+    width: auto;
+  }
+
+  .main-catalog__wrapper {
     width: 1220px;
+    margin: 0 auto;
   }
 
   .main-catalog__tittle {
