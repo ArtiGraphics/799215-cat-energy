@@ -42,8 +42,8 @@
       <h1 class="form__main-title">Подбор программы</h1>
       <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="form__list" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__item form__item--cat-info">
-          <legend class="visually-hidden">Информация о коте</legend>
+        <div class="form__item form__item--cat-info">
+          <h2 class="visually-hidden">Информация о коте</h2>
           <label class="form__label" for="cat-name">Имя:<sup>*</sup>
             <input class="form__input" type="text" name="cat-name" id="cat-name" value="" placeholder="Барсик">
           </label>
@@ -53,18 +53,18 @@
           <label class="form__label" for="cat-age">Возраст (лет):
             <input class="form__input" type="text" name="cat-age" id="cat-age" value="" placeholder="7">
           </label>
-        </fieldset>
-        <fieldset class="form__item form__item--cat-need">
-          <legend class="visually-hidden ">Что нужно вашему коту?</legend>
+        </div>
+        <div class="form__item form__item--cat-need">
+          <h2 class="visually-hidden ">Что нужно вашему коту?</h2>
           <input class="visually-hidden form__item--cat-need-input" type="radio" name="program" id="slim" checked>
           <label class="form__label form__label--cat-need" for="slim">Похудение</label>
           <input class="visually-hidden form__item--cat-need-input" type="radio" name="program" id="pro">
           <label class="form__label form__label--cat-need" for="pro">Набор массы</label>
           <input class="visually-hidden form__item--cat-need-input" type="radio" name="program" id="unknown">
           <label class="form__label form__label--cat-need" for="unknown">Не знаю (нужен ваш совет)</label>
-        </fieldset>
-        <fieldset class="form__item form__item--man">
-          <legend class="form__title">Контактные&nbsp;данные (владельца кота)</legend>
+        </div>
+        <div class="form__item form__item--man">
+          <h2 class="form__title">Контактные&nbsp;данные (владельца кота)</h2>
           <div class="form__content form__content--man">
             <label class="form__label form__label--man" for="email">e-mail:<sup>*</sup>
               <input class="form__input form__input--man" type="email" name="email" id="email" value="" placeholder="kuklachev@gmail.com">
@@ -79,14 +79,14 @@
               </svg>
             </label>
           </div>
-        </fieldset>
-        <fieldset class="form__item">
-          <legend class="form__title">Комментарий</legend>
+        </div>
+        <div class="form__item">
+          <h2 class="form__title">Комментарий</h2>
           <label class="visually-hidden" for="comment">Ваш коментарий:</label>
           <textarea class="form__comment" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-        <fieldset class="form__item form__item--more">
-          <legend class="form__title form__title--more">Дополнительно</legend>
+        </div>
+        <div class="form__item form__item--more">
+          <h2 class="form__title form__title--more">Дополнительно</h2>
           <div class="form__content form__content--more">
             <input class="visually-hidden form__input--more" type="checkbox" name="sweetener" id="sweetener" checked>
             <label class="form__label form__label--more" for="sweetener">Сахарозаменитель</label>
@@ -97,7 +97,7 @@
             <input class="visually-hidden form__input--more" type="checkbox" name="vitamins" id="vitamins">
             <label class="form__label form__label--more" for="vitamins">Витамины</label>
           </div>
-        </fieldset>
+        </div>
         <input class="form__button" type="submit" name="submit_application" value="Отправить заявку">
         <small class="form__required-fields"><sup>*</sup> — Обязательные поля</small>
       </form>
