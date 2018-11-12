@@ -117,6 +117,10 @@
   @include grey-button;
 }
 
+.main-catalog__item-link {
+  color: rgb(17, 17, 17);
+}
+
 @media (min-width: $medium-width) {
   .main-catalog {
     display: flex;
@@ -147,10 +151,6 @@
     border: none;
     background-color: rgb(242, 242, 242);
     margin-bottom: 139px;
-  }
-
-  .main-catalog__item-link {
-    color: rgb(17, 17, 17);
   }
 
   .main-catalog__item-img {
