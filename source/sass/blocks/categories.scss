@@ -113,10 +113,6 @@
   }
 }
 
-.tablet-br {
-  display: none;
-}
-
 @media (min-width: $medium-width) {
   .categories {
     width: 708px;
@@ -178,10 +174,6 @@
       left: 130px;
     }
   }
-
-  .tablet-br {
-    display: inline;
-  }
 }
 
 @media (min-width: $large-width) {
@@ -233,9 +225,5 @@
   .categories__description {
     width: 465px;
     margin-bottom: 5px;
-  }
-
-  .tablet-br {
-    display: none;
   }
 }

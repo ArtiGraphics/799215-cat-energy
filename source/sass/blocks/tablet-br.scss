@@ -1,0 +1,9 @@
+.tablet-br {
+  display: none;
+}
+
+@media (max-width: $medium-width-only) {
+  .tablet-br {
+    display: inline;
+  }
+}
