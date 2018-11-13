@@ -110,7 +110,9 @@
 }
 
 .form__item--cat-need-input:hover + .form__label--cat-need::before,
-.form__input--more:hover + .form__label--more::before {
+.form__input--more:hover + .form__label--more::before,
+.form__item--cat-need-input:focus + .form__label--cat-need::before,
+.form__input--more:focus + .form__label--more::before {
   border-color: rgb(166, 166, 166);
 }
 
