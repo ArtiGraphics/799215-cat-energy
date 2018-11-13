@@ -2,8 +2,14 @@
   display: none;
 }
 
-@media (max-width: $medium-width-only) {
+@media (min-width: $medium-width) {
   .tablet-br {
     display: inline;
+  }
+}
+
+@media (min-width: $large-width) {
+  .tablet-br {
+    display: none;
   }
 }

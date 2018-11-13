@@ -6,13 +6,13 @@
     right: 0;
     width: 50vw;
     height: 696px;
-    background-position: right;
     background-repeat: no-repeat;
     background-color: rgb(100, 168, 59);
     background-image: url("../img/index-background-desktop@1x.jpg");
-  }
+    background-size: 720px 696px;
 
-  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-    background-image: url("../index-background-desktop@2x.jpg");
+    @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
